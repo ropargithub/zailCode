@@ -19,7 +19,8 @@ pipeline {
         stage('Run Script') {
             steps {
                 echo 'Running....'
-                sh '/home/ssingh/scriptShell/echo_example.sh'
+                sh "chmod +x -R ${env.WORKSPACE}"
+                sh './echo_example.sh'
             }
         }
 
