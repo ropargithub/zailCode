@@ -16,10 +16,10 @@ pipeline {
                 echo 'Deploying....'
             }
         }
-        stage('Run') {
+        stage('Run Script') {
             steps {
                 echo 'Running....'
-                sh /home/ssingh/scriptShell/echo_example.sh
+                sh '/home/ssingh/scriptShell/echo_example.sh'
             }
         }
 
