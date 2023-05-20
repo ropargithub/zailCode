@@ -19,7 +19,7 @@ pipeline {
         stage('Run') {
             steps {
                 echo 'Running....'
-                bash /home/ssingh/scriptShell/echo_example.sh
+                sh /home/ssingh/scriptShell/echo_example.sh
             }
         }
 
