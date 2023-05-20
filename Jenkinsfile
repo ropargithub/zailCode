@@ -20,7 +20,7 @@ pipeline {
             steps {
                 echo 'Running....'
                 sh "chmod +x -R ${env.WORKSPACE}"
-                sh './echo_example.sh'
+                sh './echo_example.sh' x=10 Y=20
             }
         }
 
